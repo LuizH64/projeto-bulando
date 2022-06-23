@@ -1,0 +1,14 @@
+.Wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 10%;
+  padding-top: 2%;
+  margin-bottom: 3%;
+}
+.Wrapper .Logo {
+  width: 189px;
+  height: 38px;
+}
+.Wrapper .Hexagons {
+  width: 200px;
+}

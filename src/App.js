@@ -1,7 +1,9 @@
+import Navigation from "./navigation/Navigation";
+
 const App = () => {
     return (
         <div className="App">
-            Main screen
+            <Navigation />
         </div>
     );
 }
