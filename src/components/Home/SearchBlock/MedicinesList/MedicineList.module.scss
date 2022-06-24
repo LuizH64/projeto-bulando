@@ -1,0 +1,13 @@
+$primary-color: hsl(198, 100%, 43%);
+$secondary-color: hsl(198, 10%, 66%);
+$red: hsl(352, 51%, 52%);
+
+.MedicineList {
+    padding: 0;
+    padding-bottom: 5px;
+    max-width: 100%;
+    min-height: calc(1.1rem + 10px + 5px);
+    overflow-x: auto;
+    list-style: none;
+    border-bottom: 1px solid $secondary-color;
+}

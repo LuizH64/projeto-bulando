@@ -1,0 +1,54 @@
+@charset "UTF-8";
+.Wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding-bottom: 1rem;
+  position: relative;
+}
+.Wrapper .Input {
+  width: 100%;
+  padding: 7px 20px;
+  border: 1px solid #afb4b6;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  transition: border-color 0.3s;
+  font-size: 16px;
+}
+.Wrapper .Input::placeholder {
+  color: #cccccc;
+  opacity: 1;
+  transition: color 1s;
+}
+.Wrapper .Input:focus {
+  outline: none;
+  border-color: #009adb;
+}
+.Wrapper .Input:focus::placeholder {
+  color: #666666;
+}
+.Wrapper .Button {
+  padding: 5px 20px;
+  border: 1px solid #009adb;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #009adb;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.Wrapper .Button:hover {
+  filter: brightness(1.1);
+}
+.Wrapper.Invalid .Input {
+  border-color: #c34657;
+}
+.Wrapper.Invalid::after {
+  content: "Medicamento não encontrado";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 0.8rem;
+  color: #c34657;
+}

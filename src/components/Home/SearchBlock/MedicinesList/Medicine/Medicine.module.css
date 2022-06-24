@@ -1,0 +1,18 @@
+.Medicine {
+  display: inline-block;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: #009adb;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.Medicine .DeleteMedicineBtn {
+  background-color: transparent;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+}
