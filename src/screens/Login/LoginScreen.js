@@ -18,7 +18,7 @@ const LoginScreen = () => {
         event.preventDefault();
         setIsLoading(true);
 
-        setTimeout(() => navigate('/home'), 1500)
+        setTimeout(() => navigate('/admin'), 1500)
     }
 
     return (

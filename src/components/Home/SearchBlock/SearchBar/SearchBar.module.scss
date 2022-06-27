@@ -60,7 +60,7 @@ $red: hsl(352, 51%, 52%);
         }
 
         &::after {
-            content: "Medicamento não encontrado";
+            content: var(--error-message);
             position: absolute;
             bottom: 0;
             right: 0;

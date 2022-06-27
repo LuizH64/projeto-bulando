@@ -1,3 +1,9 @@
 .PageWrapper {
-    padding: 0 15%;
+    padding: 0 10%;
+}
+
+@media screen and (min-width: 769px) {
+    .PageWrapper {
+        padding: 0 15%;
+    }
 }

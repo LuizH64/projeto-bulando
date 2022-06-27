@@ -5,23 +5,13 @@ import React, { useState, useRef } from 'react';
 import styles from "./SearchBlock.module.css";
 
 // Components
-import SearchBar from "./SearchBar/SearchBar";
 import MedicineList from './MedicinesList/MedicineList';
+import Result from './Result/Result'
+import SearchBar from "./SearchBar/SearchBar";
 
 
 const SearchBlock = () => {
-    const [medicineList, setMedicineList] = useState([
-        {
-            "id": 1,
-            "name": "Paracetamol",
-            "pregnancySafe": false
-        },
-        {
-            "id": 2,
-            "name": "Dipirona",
-            "pregnancySafe": true
-        }
-    ]);
+    const [medicineList, setMedicineList] = useState([]);
 
     const removeMedicine = medicineId => {
         let newMedicineList = [...medicineList];
@@ -29,43 +19,51 @@ const SearchBlock = () => {
         setMedicineList(newMedicineList);
     }
 
+    const nameIsInList = (list, name) => {
+        return list.some(element => element.name.toLowerCase() === name.toLowerCase());
+    }
+
+
+    const searchMedicine = async medicineName => {
+        const searchResult = {};
+
+        const response = await fetch('medicines.json');
+        const data = await response.json();
+
+        // Verifica se o nome do medicamento está incluso em data
+        searchResult.resultFound = nameIsInList(data, medicineName);
+
+        // Verifica se o nome já foi buscado
+        if (nameIsInList(medicineList, medicineName)) {
+            searchResult.resultFound = false;
+            searchResult.errorMessage = "Medicamento já incluido na pesquisa";
+        }
+
+        if (searchResult.resultFound) {
+            const newMedicineList = [...medicineList];
+            const foundMedicine = data.find(medicine => medicine.name.toLowerCase() === medicineName.toLowerCase())
+            newMedicineList.push(foundMedicine);
+            setMedicineList(newMedicineList);
+        }
+
+        return searchResult;
+    }
+
     return (
-        <section className={styles.MainWrapper}>
+        <main className={styles.MainWrapper}>
             <SearchBar
-                doSearch={() => true}
+                doSearch={searchMedicine}
             />
 
             <MedicineList
                 medicines={medicineList}
-                removeMedicine={id => removeMedicine(id)}
+                removeMedicine={removeMedicine}
             />
 
-            {/* <div id="no-result-img-wrapper">
-                <img src="./images/no-result.png" width='500px' />
-            </div>
-
-            <section id="result">
-                <h1>Resultado</h1>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eaque dolore autem, voluptate,
-                    reiciendis tenetur dignissimos totam eum nobis inventore architecto aliquid quo rerum accusamus labore
-                    voluptatum magnam! Accusamus, id quisquam. Excepturi, quisquam eligendi magni quia maxime expedita quae
-                    et quod alias, molestiae blanditiis consequatur dolorum incidunt optio iste culpa. Quia, ut obcaecati
-                    hic debitis, nemo eligendi nesciunt similique itaque earum sequi suscipit maiores esse sunt voluptatem
-                    impedit modi, cum perspiciatis blanditiis beatae laborum. Nostrum iure dolores laborum reprehenderit
-                    itaque culpa, facere exercitationem tempore explicabo repellat excepturi incidunt eligendi distinctio
-                    mollitia corporis ducimus suscipit quod quibusdam, officiis quaerat ab laudantium.</p>
-
-
-                <footer>
-                    <section class="warning">
-                        <i class="fa-solid fa-circle-exclamation"></i>
-
-                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, et.</span>
-                    </section>
-                </footer>
-            </section> */}
-        </section>
+            <Result
+                hasResults={medicineList.length ? true : false}
+            />
+        </main>
     )
 }
 

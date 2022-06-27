@@ -1,0 +1,27 @@
+.ResultWrapper {
+  position: relative;
+  text-align: justify;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+}
+.ResultWrapper .Warning {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(195, 70, 87, 0.1);
+  color: #c34657;
+  font-weight: 300;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+
+.NoResultImageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+  padding-top: 30px;
+}
+.NoResultImageWrapper img {
+  max-width: 100%;
+  opacity: 0.8;
+}

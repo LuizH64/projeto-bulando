@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .Wrapper {
   display: flex;
   justify-content: center;
@@ -45,7 +44,7 @@
   border-color: #c34657;
 }
 .Wrapper.Invalid::after {
-  content: "Medicamento não encontrado";
+  content: var(--error-message);
   position: absolute;
   bottom: 0;
   right: 0;

@@ -5,10 +5,12 @@ import classNames from 'classnames';
 // Styles
 import styles from './SearchBar.module.css';
 
+const DEFAULT_ERROR_MESSAGE = "Medicamento não encontrado";
 
 const SearchBar = ({ doSearch }) => {
     const [isValid, setIsValid] = useState(true);
     const [searchText, setSearchText] = useState("");
+    const [errorMessage, setErrorMessage] = useState(DEFAULT_ERROR_MESSAGE);
 
     const inputRef = useRef(null);
 
@@ -17,7 +19,7 @@ const SearchBar = ({ doSearch }) => {
         setSearchText("");
     }
 
-    const submitHandler = event => {
+    const submitHandler = async event => {
         event.preventDefault();
 
         if (!searchText) {
@@ -25,10 +27,11 @@ const SearchBar = ({ doSearch }) => {
             return;
         }
 
-        const resultFound = doSearch(searchText);
-        setIsValid(resultFound);
+        const response = await doSearch(searchText);
+        setIsValid(response.resultFound);
 
-        if (resultFound) clearInput();
+        if (response.resultFound) clearInput();
+        setErrorMessage(response.errorMessage || DEFAULT_ERROR_MESSAGE);
     }
 
     const WrapperClassNames = classNames({
@@ -37,7 +40,7 @@ const SearchBar = ({ doSearch }) => {
     });
 
     return (
-        <form onSubmit={submitHandler} className={WrapperClassNames}>
+        <form onSubmit={submitHandler} className={WrapperClassNames} style={{ "--error-message": `"${errorMessage}"` }}>
             <input
                 className={styles.Input}
                 ref={inputRef}

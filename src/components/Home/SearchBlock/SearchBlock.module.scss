@@ -3,9 +3,9 @@ $secondary-color: hsl(198, 10%, 66%);
 $red: hsl(352, 51%, 52%);
 
 .MainWrapper {
-    height: 70vh;
     position: relative;
-    padding: 2% 40px;
+    height: 80vh;
+    padding: 20px 30px;
     border: 1px solid $secondary-color;
     border-radius: 10px;
     background-color: hsl(0, 0%, 97%);
@@ -13,31 +13,9 @@ $red: hsl(352, 51%, 52%);
     overflow-y: auto;
 }
 
-#medicines-img {
-    width: 300px;
-    opacity: 0.6;
-}
-
-#result {
-    position: relative;
-    text-align: justify;
-    display: none;
-    padding-top: 1rem;
-    padding-bottom: 4rem;
-
-    .warning {
-        position: absolute;
-        bottom: 0;
-        background-color: hsla(352, 51%, 52%, 10%);
-        color: $red;
-        font-weight: 300;
-        padding: 0.5rem 1rem;
-        border-radius: 10px;
+@media screen and (min-width: 769px) {
+    .MainWrapper {
+        height: 70vh;
+        padding: 2% 40px;
     }
-}
-
-#no-result-img-wrapper {
-    text-align: center;
-    opacity: 0.7;
-    padding-top: 30px;
 }
