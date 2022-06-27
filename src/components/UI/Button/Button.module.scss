@@ -1,0 +1,13 @@
+.Button {
+    padding: .5rem 3rem;
+    border-radius: 10px;
+    border: 0;
+    background-color: #009adb;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+        filter: brightness(110%);
+    }
+}

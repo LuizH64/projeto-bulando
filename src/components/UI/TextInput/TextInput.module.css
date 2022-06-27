@@ -1,0 +1,27 @@
+.InputGroup {
+  margin: 10px 0;
+}
+.InputGroup .Label {
+  display: block;
+  margin: 5px 0;
+}
+.InputGroup .TextInput {
+  padding: 10px 15px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #1f1f1f;
+  font-size: 1rem;
+  transition: all 0.4s;
+}
+.InputGroup .TextInput::placeholder {
+  opacity: 0.6;
+  transition: all 0.5s;
+}
+.InputGroup .TextInput:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px 0px #009adb60;
+  border-color: #009adb;
+}
+.InputGroup .TextInput:focus::placeholder {
+  opacity: 1;
+}
