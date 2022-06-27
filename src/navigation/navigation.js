@@ -12,6 +12,7 @@ const Navigation = () => (
         <Route path="/home" element={<HomeScreen />} />
         <Route path="/login" element={<LoginScreen />} />
         <Route path="/not-found" element={<NotFoundScreen />} />
+        <Route path="/" element={<Navigate replace to="/home" />} />
         <Route path="*" element={<Navigate replace to="/not-found" />} />
     </Routes>
 )
