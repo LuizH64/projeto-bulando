@@ -1,5 +1,5 @@
 .InputGroup {
-    margin: 10px 0;
+    margin: 20px 0;
 
     .Label {
         display: block;
@@ -12,11 +12,11 @@
         border-radius: 8px;
         border: 1px solid #1f1f1f;
         font-size: 1rem;
-        transition: all .4s;
+        transition: all .6s;
 
         &::placeholder {
             opacity: .6;
-            transition: all .5s;
+            transition: all .8s;
         }
 
         &:focus {
