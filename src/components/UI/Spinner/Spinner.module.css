@@ -8,8 +8,8 @@
   height: 2rem;
   opacity: 0.8;
   border-radius: 50%;
-  border: 3px #009adb solid;
-  border-bottom-color: #42c6ff;
+  border: 3px var(--primary) solid;
+  border-bottom-color: transparent;
   animation: spin 0.6s infinite linear;
 }
 

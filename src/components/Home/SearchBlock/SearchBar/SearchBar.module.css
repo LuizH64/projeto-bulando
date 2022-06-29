@@ -21,17 +21,17 @@
 }
 .Wrapper .Input:focus {
   outline: none;
-  border-color: #009adb;
+  border-color: var(--primary);
 }
 .Wrapper .Input:focus::placeholder {
   color: #666666;
 }
 .Wrapper .Button {
   padding: 5px 20px;
-  border: 1px solid #009adb;
+  border: 1px solid var(--primary);
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  background-color: #009adb;
+  background-color: var(--primary);
   color: #fff;
   font-size: 1rem;
   cursor: pointer;
@@ -41,7 +41,7 @@
   filter: brightness(1.1);
 }
 .Wrapper.Invalid .Input {
-  border-color: #c34657;
+  border-color: var(--danger);
 }
 .Wrapper.Invalid::after {
   content: var(--error-message);
@@ -49,5 +49,5 @@
   bottom: 0;
   right: 0;
   font-size: 0.8rem;
-  color: #c34657;
+  color: var(--danger);
 }

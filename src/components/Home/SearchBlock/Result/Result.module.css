@@ -7,8 +7,8 @@
 .ResultWrapper .Warning {
   position: absolute;
   bottom: 0;
-  background-color: rgba(195, 70, 87, 0.1);
-  color: #c34657;
+  background-color: rgba(195, 70, 87, 0.102);
+  color: var(--danger);
   font-weight: 300;
   padding: 0.5rem 1rem;
   border-radius: 10px;

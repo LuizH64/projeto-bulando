@@ -1,16 +1,23 @@
 body {
-  min-height: 100vh;
-  padding: 0;
-  margin: 0;
-  background-color: #f5f5f5;
-  font-family: "Source Sans Pro", sans-serif;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: #f5f5f5;
+    font-family: "Source Sans Pro", sans-serif;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+/* Global color variables */
+:root {
+    --primary: hsl(198, 100%, 43%);
+    --secondary: hsl(198, 10%, 66%);
+    --danger: hsl(352, 51%, 52%);
 }

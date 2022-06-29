@@ -5,6 +5,6 @@
   min-height: calc(1.1rem + 10px + 5px);
   overflow-x: auto;
   list-style: none;
-  border-bottom: 1px solid #a0acb1;
+  border-bottom: 1px solid var(--secondary);
   margin: 0;
 }
