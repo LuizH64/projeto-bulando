@@ -34,7 +34,7 @@ const SearchBlock = () => {
         // Verifica se o nome já foi buscado
         if (nameIsInList(medicineList, medicineName)) {
             searchResult.resultFound = false;
-            searchResult.errorMessage = "Medicamento já incluido na pesquisa";
+            searchResult.errorMessage = "Medicamento já incluso na pesquisa";
         }
 
         if (searchResult.resultFound) {
