@@ -1,7 +1,7 @@
 .MainWrapper {
   position: relative;
   height: 80vh;
-  padding: 20px 30px;
+  padding: 20px 10px;
   border: 1px solid var(--secondary);
   border-radius: 10px;
   background-color: #f7f7f7;

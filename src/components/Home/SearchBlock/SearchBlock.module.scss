@@ -1,10 +1,12 @@
 .MainWrapper {
     position: relative;
     height: 80vh;
-    padding: 20px 30px;
+    padding: 20px 10px;
+
     border: 1px solid var(--secondary);
     border-radius: 10px;
     background-color: hsl(0, 0%, 97%);
+
     box-shadow: 0 0 30px 0 #00000020;
     overflow-y: auto;
 }

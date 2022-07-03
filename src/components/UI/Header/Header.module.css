@@ -1,14 +1,23 @@
 .Wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   height: 10%;
-  padding-top: 2%;
-  margin-bottom: 3%;
+  padding-top: max(2%, 10px);
+  margin-bottom: max(3%, 20px);
 }
 .Wrapper .Logo {
   width: 189px;
   height: 38px;
 }
 .Wrapper .Hexagons {
-  width: 200px;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .Wrapper {
+    justify-content: space-between;
+  }
+  .Wrapper .Hexagons {
+    width: 200px;
+  }
 }
