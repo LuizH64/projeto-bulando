@@ -5,7 +5,7 @@ import React from 'react';
 import styles from './Result.module.css';
 
 
-const Result = ({ hasResults }) => {
+const Result = ({ hasResults, pregancyRiskMedicines }) => {
     return hasResults ? (
         <section className={styles.ResultWrapper}>
             <h1>Resultado</h1>
@@ -22,11 +22,27 @@ const Result = ({ hasResults }) => {
             </p>
 
 
-            <footer>
-                <section className={styles.Warning}>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, et.</span>
-                </section>
-            </footer>
+            {pregancyRiskMedicines?.length ? (
+                <footer>
+                    <section className={styles.Warning}>
+                        <span>
+                            {pregancyRiskMedicines.map((medicine, index) => {
+                                if (!index)
+                                    return medicine;
+
+                                if (index === pregancyRiskMedicines.length - 1)
+                                    return ` e ${medicine}`;
+                                    
+                                return `, ${medicine}`
+                            })}
+                            {' '}não{' '}
+                            {pregancyRiskMedicines.length === 1 ? 'é' : 'são'}
+                            {' '}recomendado{pregancyRiskMedicines.length === 1 ? '' : 's'}
+                            {' '}em caso de gravidez.
+                        </span>
+                    </section>
+                </footer>
+            ) : null}
         </section>
     ) : (
         <div className={styles.NoResultImageWrapper}>

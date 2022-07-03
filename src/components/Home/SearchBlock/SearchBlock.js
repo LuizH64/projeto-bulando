@@ -60,6 +60,7 @@ const SearchBlock = () => {
 
             <Result
                 hasResults={medicineList.length ? true : false}
+                pregancyRiskMedicines={medicineList.filter(medicine => !medicine.pregnancySafe).map(medicine => medicine.name)}
             />
         </main>
     )
