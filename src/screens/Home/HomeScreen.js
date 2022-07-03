@@ -2,7 +2,7 @@
 import React from "react";
 
 // Components
-import Header from "../../components/Home/Header/Header";
+import Header from "../../components/UI/Header/Header";
 import SearchBlock from "../../components/Home/SearchBlock/SearchBlock";
 
 // Styles

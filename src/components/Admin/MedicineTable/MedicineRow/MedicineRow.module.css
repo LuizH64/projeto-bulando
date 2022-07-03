@@ -1,0 +1,18 @@
+.Row {
+  border-bottom: 1px solid #aaaaaa;
+  background-color: #eeeeee;
+  cursor: pointer;
+}
+.Row:hover {
+  filter: brightness(98%);
+}
+.Row:nth-child(even) {
+  background-color: #f8f8f8;
+}
+.Row:last-child {
+  border-bottom: 0;
+}
+.Row td {
+  padding: 10px;
+  text-align: center;
+}

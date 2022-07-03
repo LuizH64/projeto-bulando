@@ -1,0 +1,17 @@
+.Wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 5vh 20vw 8vh 20vw;
+
+    .Main {
+        height: 72vh;
+        min-width: 60%;
+        padding: 20px;
+        border-radius: 20px;
+
+        background-color: #fff;
+
+        box-shadow: 0px 0px 40px 5px rgba(0, 0, 0, 0.2);
+    }
+}

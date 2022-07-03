@@ -1,5 +1,5 @@
 // Dependencies
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 
 // Styles
 import styles from "./SearchBlock.module.css";
@@ -7,7 +7,10 @@ import styles from "./SearchBlock.module.css";
 // Components
 import MedicineList from './MedicinesList/MedicineList';
 import Result from './Result/Result'
-import SearchBar from "./SearchBar/SearchBar";
+import SearchBar from "../../UI/SearchBar/SearchBar";
+
+// Helpers
+import { nameIsInList } from '../../../Helpers';
 
 
 const SearchBlock = () => {
@@ -18,11 +21,6 @@ const SearchBlock = () => {
         newMedicineList = newMedicineList.filter(medicine => medicine.id !== medicineId);
         setMedicineList(newMedicineList);
     }
-
-    const nameIsInList = (list, name) => {
-        return list.some(element => element.name.toLowerCase() === name.toLowerCase());
-    }
-
 
     const searchMedicine = async medicineName => {
         const searchResult = {};

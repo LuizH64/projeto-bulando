@@ -1,12 +1,77 @@
 [
     {
         "id": 1,
-        "name": "Paracetamol",
+        "name": "Aspirina",
         "pregnancySafe": false
     },
     {
         "id": 2,
         "name": "Dipirona",
+        "pregnancySafe": true
+    },
+    {
+        "id": 3,
+        "name": "Dorflex",
+        "pregnancySafe": true
+    },
+    {
+        "id": 4,
+        "name": "Paracetamol",
+        "pregnancySafe": true
+    },
+    {
+        "id": 5,
+        "name": "Penicilamina",
         "pregnancySafe": false
+    },
+    {
+        "id": 6,
+        "name": "Neosaldina",
+        "pregnancySafe": true
+    },
+    {
+        "id": 7,
+        "name": "Rivotril",
+        "pregnancySafe": true
+    },
+    {
+        "id": 8,
+        "name": "Amoxicilina",
+        "pregnancySafe": true
+    },
+    {
+        "id": 9,
+        "name": "Tamarine",
+        "pregnancySafe": true
+    },
+    {
+        "id": 10,
+        "name": "Tylenol",
+        "pregnancySafe": true
+    },
+    {
+        "id": 11,
+        "name": "Ivermectina",
+        "pregnancySafe": true
+    },
+    {
+        "id": 12,
+        "name": "Neo Soro",
+        "pregnancySafe": true
+    },
+    {
+        "id": 13,
+        "name": "Doril",
+        "pregnancySafe": true
+    },
+    {
+        "id": 14,
+        "name": "Toragesic",
+        "pregnancySafe": true
+    },
+    {
+        "id": 15,
+        "name": "Doralgina",
+        "pregnancySafe": true
     }
 ]

@@ -7,7 +7,7 @@ import styles from './SearchBar.module.css';
 
 const DEFAULT_ERROR_MESSAGE = "Medicamento não encontrado";
 
-const SearchBar = ({ doSearch }) => {
+const SearchBar = ({ doSearch, allowEmptySearch = false }) => {
     const [isValid, setIsValid] = useState(true);
     const [searchText, setSearchText] = useState("");
     const [errorMessage, setErrorMessage] = useState(DEFAULT_ERROR_MESSAGE);
@@ -22,7 +22,7 @@ const SearchBar = ({ doSearch }) => {
     const submitHandler = async event => {
         event.preventDefault();
 
-        if (!searchText) {
+        if (!searchText && !allowEmptySearch) {
             setIsValid(false);
             return;
         }

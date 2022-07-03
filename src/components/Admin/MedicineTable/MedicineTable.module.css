@@ -1,0 +1,26 @@
+.Wrapper {
+  max-height: 90%;
+  overflow-y: auto;
+}
+.Wrapper .Table {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border-collapse: collapse;
+  width: 100%;
+}
+.Wrapper .Table .TableHeader {
+  position: sticky;
+  background-color: var(--primary);
+  color: #fff;
+  top: 0;
+}
+.Wrapper .Table .TableHeader th {
+  padding: 10px;
+}
+.Wrapper .Table .TableHeader th:first-child {
+  border-top-left-radius: 10px;
+}
+.Wrapper .Table .TableHeader th:last-child {
+  border-top-right-radius: 10px;
+}
