@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "name": "Paracetamol",
+        "pregnancySafe": false
+    },
+    {
+        "id": 2,
+        "name": "Dipirona",
+        "pregnancySafe": false
+    }
+]

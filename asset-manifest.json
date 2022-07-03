@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/projeto-bulando/static/css/main.566df018.css",
+    "main.js": "/projeto-bulando/static/js/main.e27bba5a.js",
+    "static/js/787.cca2e298.chunk.js": "/projeto-bulando/static/js/787.cca2e298.chunk.js",
+    "index.html": "/projeto-bulando/index.html",
+    "main.566df018.css.map": "/projeto-bulando/static/css/main.566df018.css.map",
+    "main.e27bba5a.js.map": "/projeto-bulando/static/js/main.e27bba5a.js.map",
+    "787.cca2e298.chunk.js.map": "/projeto-bulando/static/js/787.cca2e298.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.566df018.css",
+    "static/js/main.e27bba5a.js"
+  ]
+}
