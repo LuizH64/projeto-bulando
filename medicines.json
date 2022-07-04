@@ -2,76 +2,212 @@
     {
         "id": 1,
         "name": "Aspirina",
-        "pregnancySafe": false
+        "pregnancySafe": false,
+        "classification": "Analgésico",
+        "interactions": [
+            {
+                "id": 2,
+                "name": "Captopril",
+                "severity": "Grave",
+                "resume": "A aspirina pode diminuir a ação anti-hipertensiva do captopril."
+            },
+            {
+                "id": 3,
+                "name": "Insulina",
+                "severity": "Grave",
+                "resume": "A aspirina pode aumentar a ação hipoglicemiante da insulina."
+            },
+            {
+                "id": 7,
+                "name": "Anlodipino",
+                "severity": "Grave",
+                "resume": "A combinação pode aumentar a pressão arterial e pode ser necessário um ajuste de dose ou monitoramento da pressão arterial com mais frequência."
+            },
+            {
+                "id": 8,
+                "name": "Prednisona",
+                "severity": "Grave",
+                "resume": "Há o aumento do risco de efeitos adversos no trato gastrointestinal, como inflamação, sangramento, ulceração e, raramente, perfuração."
+            },
+            {
+                "id": 4,
+                "name": "Cálcio",
+                "severity": "Moderado",
+                "resume": "O uso de carbonato de calcio junto com aspirina pode diminuir os efeitos da aspirina."
+            },
+            {
+                "id": 9,
+                "name": "Ibuprofeno",
+                "severity": "Grave",
+                "resume": "O uso frequente ou regular de ibuprofeno pode reduzir a eficácia da aspirina se o uso for para prevenir ataques cardíacos ou derrames. Além disso, a combinação desses medicamentos pode aumentar o risco de desenvolver úlceras gastrointestinais e sangramento"
+            }
+        ]
     },
     {
         "id": 2,
-        "name": "Dipirona",
-        "pregnancySafe": true
+        "name": "Captopril",
+        "pregnancySafe": false,
+        "interactions": []
     },
     {
         "id": 3,
-        "name": "Dorflex",
-        "pregnancySafe": true
+        "name": "Insulina",
+        "pregnancySafe": true,
+        "interactions": []
     },
     {
         "id": 4,
-        "name": "Paracetamol",
-        "pregnancySafe": true
+        "name": "Cálcio",
+        "pregnancySafe": true,
+        "interactions": []
     },
     {
         "id": 5,
-        "name": "Penicilamina",
-        "pregnancySafe": false
+        "name": "Metformina",
+        "pregnancySafe": false,
+        "interactions": [
+            {
+                "id": 6,
+                "name": "Vitamina B12",
+                "severity": "Grave",
+                "resume": "A metformina pode interferir na absorção da vitamina B12 (cianocobalamina), tanto natural quanto sintética."
+            },
+            {
+                "id": 3,
+                "name": "Insulina",
+                "severity": "Grave",
+                "resume": "Essa associação pode aumentar o risco de hipoglicemia. É necessário ajuste de dose e monitoramento."
+            }
+        ]
     },
     {
         "id": 6,
-        "name": "Neosaldina",
-        "pregnancySafe": true
+        "name": "Vitamina B12",
+        "pregnancySafe": true,
+        "interactions": []
     },
     {
         "id": 7,
-        "name": "Rivotril",
-        "pregnancySafe": true
+        "name": "Anlodipino",
+        "pregnancySafe": false,
+        "interactions": []
     },
     {
         "id": 8,
-        "name": "Amoxicilina",
-        "pregnancySafe": true
+        "name": "Prednisona",
+        "pregnancySafe": false,
+        "interactions": []
     },
     {
         "id": 9,
-        "name": "Tamarine",
-        "pregnancySafe": true
+        "name": "Ibuprofeno",
+        "pregnancySafe": false,
+        "interactions": [
+            {
+                "id": 10,
+                "name": "Duloxetina",
+                "severity": "Grave",
+                "resume": "O uso dessas combinações pode aumentar o risco de sangramento. Esse efeito é mais provável de ocorrer se o paciente for idoso ou tiver doença renal ou hepática."
+            },
+            {
+                "id": 11,
+                "name": "Sertralina",
+                "severity": "Grave",
+                "resume": "O uso dessas combinações pode aumentar o risco de sangramento. Esse efeito é mais provável de ocorrer se o paciente for idoso ou tiver doença renal ou hepática."
+            }
+        ]
     },
     {
         "id": 10,
-        "name": "Tylenol",
-        "pregnancySafe": true
+        "name": "Duloxetina",
+        "pregnancySafe": false,
+        "interactions": []
     },
     {
         "id": 11,
-        "name": "Ivermectina",
-        "pregnancySafe": true
+        "name": "Sertralina",
+        "pregnancySafe": true,
+        "interactions": [
+            {
+                "id": 18,
+                "name": "Pregabalina",
+                "severity": "Grave",
+                "resume": "O tratamento com a sertralina pode fazer com que os níveis de sódio no sangue fiquem muito baixos (hiponatremia). Usar a sertralina junto com a pregabalina pode aumentar esse risco. Além disso, a sertralina pode causar convulsões em pacientes suscetíveis, o que pode reduzir a eficácia de medicamentos usados para controlar convulsões, como a pregabalina"
+            }
+        ]
     },
     {
         "id": 12,
-        "name": "Neo Soro",
-        "pregnancySafe": true
+        "name": "Ritalina",
+        "pregnancySafe": false,
+        "interactions": [
+            {
+                "id": 13,
+                "name": "Tramadol",
+                "severity": "Grave",
+                "resume": "O tramadol pode causar convulsões em raras ocasiões, e combiná-lo com outros medicamentos que também podem causar convulsões, como o metilfenidato, pode aumentar esse risco. Esse risco é maior em idosos, pessoas com abstinência de álcool ou drogas ou com histórico de convulsões."
+            },
+            {
+                "id": 11,
+                "name": "Sertralina",
+                "severity": "Grave",
+                "resume": "O metilfenidato pode aumentar os níveis sanguíneos e os efeitos da sertralina. Essa combinação também pode causar uma condição chamada síndrome serotoninérgica, que pode incluir sintomas como confusão, alucinação, convulsão, entre outros sintomas psiquicos."
+            },
+            {
+                "id": 14,
+                "name": "Escitalopram",
+                "severity": "Grave",
+                "resume": "O metilfenidato pode aumentar os níveis sanguíneos e os efeitos do escitalopram, pode causar uma condição chamada síndrome serotoninérgica."
+            }
+        ]
     },
     {
         "id": 13,
-        "name": "Doril",
-        "pregnancySafe": true
+        "name": "Tramadol",
+        "pregnancySafe": false,
+        "interactions": []
     },
     {
         "id": 14,
-        "name": "Toragesic",
-        "pregnancySafe": true
+        "name": "Escitalopram",
+        "pregnancySafe": false,
+        "interactions": []
     },
     {
         "id": 15,
-        "name": "Doralgina",
-        "pregnancySafe": true
+        "name": "Metronidazol",
+        "pregnancySafe": false,
+        "interactions": [
+            {
+                "id": 16,
+                "name": "Ciprofloxacino",
+                "severity": "Grave",
+                "resume": "O uso do ciprofloxacino junto com o metronidazol pode aumentar o risco de ritmos cardíacos irregulares, podendo causar até morte. E um efeito adverso relativamente raro."
+            },
+            {
+                "id": 17,
+                "name": "Lactobacillus",
+                "severity": "Leve",
+                "resume": "Pode diminuir os efeitos do lactobacillus acidophilus quando esses medicamentos são tomados ao mesmo tempo. Para prevenir ou minimizar a interação, o probiótico com Lactobacillus acidophilus deve ser administrado pelo menos 1 a 2 horas antes ou após a administração do metronidazol."
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "name": "Ciprofloxacino",
+        "pregnancySafe": false,
+        "interactions": []
+    },
+    {
+        "id": 17,
+        "name": "Lactobacillus",
+        "pregnancySafe": true,
+        "interactions": []
+    },
+    {
+        "id": 18,
+        "name": "Pregabalina",
+        "pregnancySafe": false,
+        "interactions": []
     }
 ]
