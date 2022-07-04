@@ -17,4 +17,4 @@ Através de processos automatizados, o Bulando reúne diversas informações de 
 ## O que fazer com nossas informações?
 Informar a população em geral, principalmente usuários que se auto-medicam sobre os riscos de possíveis interações ou intoxicações provenientes de medicamentos.
 
-**Atenção:** O Bulando não subtitui um médico, confie sempre nos profissionais da saúde. Tomem vacina!
+**Atenção: O Bulando não substitui um médico, confie sempre nos profissionais da saúde. Tomem vacina!**
