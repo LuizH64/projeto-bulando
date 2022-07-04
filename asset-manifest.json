@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/projeto-bulando/static/css/main.3394b153.css",
-    "main.js": "/projeto-bulando/static/js/main.f2864d94.js",
+    "main.css": "/projeto-bulando/static/css/main.03035934.css",
+    "main.js": "/projeto-bulando/static/js/main.2354bb26.js",
     "static/js/787.cca2e298.chunk.js": "/projeto-bulando/static/js/787.cca2e298.chunk.js",
     "index.html": "/projeto-bulando/index.html",
-    "main.3394b153.css.map": "/projeto-bulando/static/css/main.3394b153.css.map",
-    "main.f2864d94.js.map": "/projeto-bulando/static/js/main.f2864d94.js.map",
+    "main.03035934.css.map": "/projeto-bulando/static/css/main.03035934.css.map",
+    "main.2354bb26.js.map": "/projeto-bulando/static/js/main.2354bb26.js.map",
     "787.cca2e298.chunk.js.map": "/projeto-bulando/static/js/787.cca2e298.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3394b153.css",
-    "static/js/main.f2864d94.js"
+    "static/css/main.03035934.css",
+    "static/js/main.2354bb26.js"
   ]
 }
