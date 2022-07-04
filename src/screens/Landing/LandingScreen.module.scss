@@ -1,0 +1,63 @@
+.Wrapper {
+    .Main {
+        .TextWrapper {
+            padding: 0 2rem;
+            margin-bottom: 2rem;
+
+            .Title {
+                font-size: 2.5rem;
+                line-height: 2rem;
+                margin: 0;
+                margin: 2.5rem 0 1.5rem 0;
+
+                span {
+                    font-size: 1.8rem;
+                    font-weight: 500;
+                }
+            }
+
+            .Description {
+                display: block;
+                margin-bottom: 1rem;
+                font-size: 1.2rem;
+            }
+        }
+
+        .ImageWrapper {
+            text-align: center;
+            margin-top: 15vh;
+
+            img {
+                max-width: 50vw;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .Wrapper {
+        padding: 1rem 8vw;
+
+        .Main {
+            display: flex;
+            gap: 2rem;
+
+            .TextWrapper {
+                padding-top: 5vh;
+                margin: 0;                
+            }
+
+            .ImageWrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50vw;
+                margin-top: 2vw;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -11,6 +11,7 @@ const Button = props => {
             type={props.type || 'button'}
             styles={{ backgroundColor: props.backgroundColor }}
             title={props.title}
+            onClick={props.onClick}
         >
             {props.children}
         </button>

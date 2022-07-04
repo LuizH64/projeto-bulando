@@ -1,0 +1,50 @@
+.Wrapper .Main .TextWrapper {
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
+.Wrapper .Main .TextWrapper .Title {
+  font-size: 2.5rem;
+  line-height: 2rem;
+  margin: 0;
+  margin: 2.5rem 0 1.5rem 0;
+}
+.Wrapper .Main .TextWrapper .Title span {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.Wrapper .Main .TextWrapper .Description {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+.Wrapper .Main .ImageWrapper {
+  text-align: center;
+  margin-top: 15vh;
+}
+.Wrapper .Main .ImageWrapper img {
+  max-width: 50vw;
+}
+
+@media screen and (min-width: 768px) {
+  .Wrapper {
+    padding: 1rem 8vw;
+  }
+  .Wrapper .Main {
+    display: flex;
+    gap: 2rem;
+  }
+  .Wrapper .Main .TextWrapper {
+    padding-top: 5vh;
+    margin: 0;
+  }
+  .Wrapper .Main .ImageWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    margin-top: 2vw;
+  }
+  .Wrapper .Main .ImageWrapper img {
+    max-width: 100%;
+  }
+}
