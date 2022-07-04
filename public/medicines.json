@@ -3,7 +3,7 @@
         "id": 1,
         "name": "Aspirina",
         "pregnancySafe": false,
-        "classification": "Analgésico",
+        "classification": "Anti-inflamatório",
         "interactions": [
             {
                 "id": 2,
@@ -47,24 +47,28 @@
         "id": 2,
         "name": "Captopril",
         "pregnancySafe": false,
+        "classification": "Anti-hipertensivo",
         "interactions": []
     },
     {
         "id": 3,
         "name": "Insulina",
         "pregnancySafe": true,
+        "classification": "Antidiabético",
         "interactions": []
     },
     {
         "id": 4,
         "name": "Cálcio",
         "pregnancySafe": true,
+        "classification": "Antiácido",
         "interactions": []
     },
     {
         "id": 5,
         "name": "Metformina",
         "pregnancySafe": false,
+        "classification": "Antidiabético ",
         "interactions": [
             {
                 "id": 6,
@@ -84,24 +88,28 @@
         "id": 6,
         "name": "Vitamina B12",
         "pregnancySafe": true,
+        "classification": "Suplemento",
         "interactions": []
     },
     {
         "id": 7,
         "name": "Anlodipino",
         "pregnancySafe": false,
+        "classification": "Anti-hipertensivo",
         "interactions": []
     },
     {
         "id": 8,
         "name": "Prednisona",
         "pregnancySafe": false,
+        "classification": "Anti-inflamatório",
         "interactions": []
     },
     {
         "id": 9,
         "name": "Ibuprofeno",
         "pregnancySafe": false,
+        "classification": "Anti-inflamatório",
         "interactions": [
             {
                 "id": 10,
@@ -121,12 +129,14 @@
         "id": 10,
         "name": "Duloxetina",
         "pregnancySafe": false,
+        "classification": "Antidepressivo",
         "interactions": []
     },
     {
         "id": 11,
         "name": "Sertralina",
         "pregnancySafe": true,
+        "classification": "Antidepressivo ",
         "interactions": [
             {
                 "id": 18,
@@ -140,6 +150,7 @@
         "id": 12,
         "name": "Ritalina",
         "pregnancySafe": false,
+        "classification": "Psicoestimulante ",
         "interactions": [
             {
                 "id": 13,
@@ -165,18 +176,21 @@
         "id": 13,
         "name": "Tramadol",
         "pregnancySafe": false,
+        "classification": "Analgésico",
         "interactions": []
     },
     {
         "id": 14,
         "name": "Escitalopram",
         "pregnancySafe": false,
+        "classification": "Antidepressivo",
         "interactions": []
     },
     {
         "id": 15,
         "name": "Metronidazol",
         "pregnancySafe": false,
+        "classification": "Antibiótico",
         "interactions": [
             {
                 "id": 16,
@@ -196,18 +210,21 @@
         "id": 16,
         "name": "Ciprofloxacino",
         "pregnancySafe": false,
+        "classification": "Antibiótico",
         "interactions": []
     },
     {
         "id": 17,
         "name": "Lactobacillus",
         "pregnancySafe": true,
+        "classification": "Probiótico",
         "interactions": []
     },
     {
         "id": 18,
         "name": "Pregabalina",
         "pregnancySafe": false,
+        "classification": "Anticonvulsivante",
         "interactions": []
     }
 ]
