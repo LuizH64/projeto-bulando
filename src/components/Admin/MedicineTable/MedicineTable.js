@@ -17,6 +17,7 @@ const MedicineTable = ({ medicines }) => {
                         <th>ID</th>
                         <th>Nome</th>
                         <th>Risco Gestação</th>
+                        <th>Classe</th>
                     </tr>
                 </thead>
 

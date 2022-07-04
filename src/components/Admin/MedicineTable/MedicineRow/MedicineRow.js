@@ -13,6 +13,7 @@ const MedicineRow = ({ medicine }) => {
             <td style={{ color: medicine.pregnancySafe ? 'var(--success)' : 'var(--danger)' }}>
                 {medicine.pregnancySafe ? 'Não' : 'Sim'}
             </td>
+            <td>{medicine.classification}</td>
         </tr>
     )
 }
