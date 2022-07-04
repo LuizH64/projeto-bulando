@@ -1,5 +1,5 @@
 // Dependencies
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 // Styles
 import styles from "./SearchBlock.module.css";
@@ -10,11 +10,43 @@ import Result from './Result/Result'
 import SearchBar from "../../UI/SearchBar/SearchBar";
 
 // Helpers
-import { nameIsInList } from '../../../Helpers';
+import { nameIsInList, removeFormatation } from '../../../Helpers';
 
 
 const SearchBlock = () => {
     const [medicineList, setMedicineList] = useState([]);
+    const [results, setResults] = useState([]);
+
+    // Set results
+    useEffect(() => {
+        if (!medicineList.length) {
+            setResults([])
+            return;
+        }
+
+        if (medicineList.length === 1) {
+            setResults([...medicineList]);
+            return;
+        }
+
+        const medicinesIds = medicineList.map(medicine => medicine.id);
+
+        let medicinesWithInteractions = medicineList.filter(medicine => {
+            const interactionsIds = medicine.interactions.map(interaction => interaction.id);
+
+            for (const medicineId of medicinesIds)
+                if (interactionsIds.includes(medicineId)) return true;
+
+            return false;
+        });
+
+        medicinesWithInteractions = medicinesWithInteractions.map(medicine => ({
+            ...medicine,
+            interactions: medicine.interactions.filter(interaction => medicinesIds.includes(interaction.id))
+        }));
+
+        setResults(medicinesWithInteractions);
+    }, [medicineList]);
 
     const removeMedicine = medicineId => {
         let newMedicineList = [...medicineList];
@@ -39,7 +71,7 @@ const SearchBlock = () => {
 
         if (searchResult.resultFound) {
             const newMedicineList = [...medicineList];
-            const foundMedicine = data.find(medicine => medicine.name.toLowerCase() === medicineName.toLowerCase())
+            const foundMedicine = data.find(medicine => removeFormatation(medicine.name) === removeFormatation(medicineName))
             newMedicineList.push(foundMedicine);
             setMedicineList(newMedicineList);
         }
@@ -59,7 +91,8 @@ const SearchBlock = () => {
             />
 
             <Result
-                hasResults={medicineList.length > 1 ? true : false}
+                hasResults={medicineList.length}
+                medicines={results}
                 pregancyRiskMedicines={medicineList.filter(medicine => !medicine.pregnancySafe).map(medicine => medicine.name)}
             />
         </main>

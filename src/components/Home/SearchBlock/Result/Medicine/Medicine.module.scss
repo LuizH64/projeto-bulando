@@ -1,0 +1,11 @@
+.InteractionsList {
+    list-style: none;
+    padding-left: 3rem;
+
+    li::before {
+        content: "\2B21";
+        position: absolute;
+        color: var(--primary);
+        margin-left: -1.8rem;
+    }
+}

@@ -4,16 +4,6 @@
     min-height: 50vh;
     padding-top: 1rem;
     padding-bottom: 4rem;
-
-    .Warning {
-        position: absolute;
-        bottom: 0;
-        background-color: hsla(352, 51%, 52%, 0.102);
-        color: var(--danger);
-        font-weight: 300;
-        padding: 0.5rem 1rem;
-        border-radius: 10px;
-    }
 }
 
 .NoResultImageWrapper {

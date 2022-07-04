@@ -1,0 +1,8 @@
+.Warning {
+  background-color: rgba(195, 187, 70, 0.102);
+  color: var(--warning);
+  font-weight: 300;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  margin-top: 10px;
+}

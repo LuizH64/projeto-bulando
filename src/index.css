@@ -21,4 +21,5 @@ code {
     --secondary: hsl(198, 10%, 66%);
     --success: hsl(120, 100%, 30%);
     --danger: hsl(352, 51%, 52%);
+    --warning: hsl(57, 100%, 30%);
 }

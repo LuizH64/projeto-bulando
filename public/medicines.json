@@ -2,76 +2,44 @@
     {
         "id": 1,
         "name": "Aspirina",
-        "pregnancySafe": false
+        "pregnancySafe": false,
+        "interactions": [
+            {
+                "id": 2,
+                "name": "Captopril",
+                "severity": "Grave",
+                "resume": "A aspirina pode diminuir a ação anti-hipertensiva do captopril."
+            },
+            {
+                "id": 3,
+                "name": "Insulina",
+                "severity": "Grave",
+                "resume": "A aspirina pode aumentar a ação hipoglicemiante da insulina."
+            },
+            {
+                "id": 4,
+                "name": "Cálcio",
+                "severity": "Moderado",
+                "resume": "O uso de carbonato de calcio junto com aspirina pode diminuir os efeitos da aspirina."
+            }
+        ]
     },
     {
         "id": 2,
-        "name": "Dipirona",
-        "pregnancySafe": true
+        "name": "Captopril",
+        "pregnancySafe": false,
+        "interactions": []
     },
     {
         "id": 3,
-        "name": "Dorflex",
-        "pregnancySafe": true
+        "name": "Insulina",
+        "pregnancySafe": true,
+        "interactions": []
     },
     {
         "id": 4,
-        "name": "Paracetamol",
-        "pregnancySafe": true
-    },
-    {
-        "id": 5,
-        "name": "Penicilamina",
-        "pregnancySafe": false
-    },
-    {
-        "id": 6,
-        "name": "Neosaldina",
-        "pregnancySafe": true
-    },
-    {
-        "id": 7,
-        "name": "Rivotril",
-        "pregnancySafe": true
-    },
-    {
-        "id": 8,
-        "name": "Amoxicilina",
-        "pregnancySafe": true
-    },
-    {
-        "id": 9,
-        "name": "Tamarine",
-        "pregnancySafe": true
-    },
-    {
-        "id": 10,
-        "name": "Tylenol",
-        "pregnancySafe": true
-    },
-    {
-        "id": 11,
-        "name": "Ivermectina",
-        "pregnancySafe": true
-    },
-    {
-        "id": 12,
-        "name": "Neo Soro",
-        "pregnancySafe": true
-    },
-    {
-        "id": 13,
-        "name": "Doril",
-        "pregnancySafe": true
-    },
-    {
-        "id": 14,
-        "name": "Toragesic",
-        "pregnancySafe": true
-    },
-    {
-        "id": 15,
-        "name": "Doralgina",
-        "pregnancySafe": true
+        "name": "Cálcio",
+        "pregnancySafe": true,
+        "interactions": []
     }
 ]

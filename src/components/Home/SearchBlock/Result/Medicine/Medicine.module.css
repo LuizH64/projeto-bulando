@@ -1,0 +1,11 @@
+@charset "UTF-8";
+.InteractionsList {
+  list-style: none;
+  padding-left: 3rem;
+}
+.InteractionsList li::before {
+  content: "⬡";
+  position: absolute;
+  color: var(--primary);
+  margin-left: -1.8rem;
+}

@@ -18,6 +18,7 @@
     justify-content: space-between;
   }
   .Wrapper .Hexagons {
+    display: block;
     width: 200px;
   }
 }

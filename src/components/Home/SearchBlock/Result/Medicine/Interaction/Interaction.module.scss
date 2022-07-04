@@ -1,0 +1,7 @@
+.Wrapper {
+    border-bottom: 1px solid #000;
+
+    &:last-child {
+        border-bottom: 0;
+    }
+}
