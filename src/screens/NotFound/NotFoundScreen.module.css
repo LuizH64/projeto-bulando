@@ -1,0 +1,14 @@
+.Image {
+  width: 60vw;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .Image {
+    width: 25vw;
+  }
+}

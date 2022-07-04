@@ -1,9 +1,32 @@
 @charset "UTF-8";
-.InteractionsList {
+.Wrapper {
+  margin: 20px 0;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--primary);
+  border-right: 0;
+  border-left: 0;
+  border-radius: 5px;
+}
+.Wrapper .Header {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+.Wrapper .Header h2 {
+  margin: 0;
+}
+.Wrapper .Header .Classification {
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: vaR(--primary);
+  color: #fff;
+  font-size: smaller;
+}
+.Wrapper .InteractionsList {
   list-style: none;
   padding-left: 3rem;
 }
-.InteractionsList li::before {
+.Wrapper .InteractionsList li::before {
   content: "⬡";
   position: absolute;
   color: var(--primary);

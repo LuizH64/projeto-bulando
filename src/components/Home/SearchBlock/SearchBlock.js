@@ -24,7 +24,7 @@ const SearchBlock = () => {
             return;
         }
 
-        if (medicineList.length === 1) {
+        if (medicineList.length === 1 && medicineList?.[0].interactions.length) {
             setResults([...medicineList]);
             return;
         }

@@ -12,7 +12,13 @@ import styles from './Medicine.module.css';
 const Medicine = ({ medicine }) => {
     return (
         <section className={styles.Wrapper}>
-            <h2>{medicine.name}</h2>
+            <header className={styles.Header}>
+                <h2>{medicine.name}</h2>
+
+                {medicine.classification ? (
+                    <span className={styles.Classification}>{medicine.classification}</span>
+                ) : null}
+            </header>
 
             <ul className={styles.InteractionsList}>
                 {medicine.interactions.map(interaction => (

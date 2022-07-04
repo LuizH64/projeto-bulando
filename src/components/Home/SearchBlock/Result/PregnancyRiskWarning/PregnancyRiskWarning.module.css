@@ -1,4 +1,5 @@
 .Warning {
+  display: inline-block;
   background-color: rgba(195, 70, 87, 0.102);
   color: var(--danger);
   font-weight: 300;

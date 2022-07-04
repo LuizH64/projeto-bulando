@@ -6,10 +6,12 @@ import styles from './AlchoolWarning.module.css';
 
 const AlchoolWarning = () => {
     return (
-        <section className={styles.Warning}>
-            <span>
-                Atenção: Nenhum medicamento deve ser ingerido junto a bebidas alcoólicas.
-            </span>
+        <section>
+            <div className={styles.Warning}>
+                <span>
+                    Atenção: Nenhum medicamento deve ser ingerido junto a bebidas alcoólicas.
+                </span>
+            </div>
         </section>
     )
 }

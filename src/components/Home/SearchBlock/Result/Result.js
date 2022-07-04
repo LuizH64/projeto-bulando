@@ -19,7 +19,7 @@ const Result = ({ hasResults, pregancyRiskMedicines, medicines }) => {
             {medicines?.length ? (
                 <>
                     <h1 style={{ marginBottom: '10px' }}>Resultados</h1>
-                    <span>Encontramos algumas interações não recomendadas:</span>
+                    <span>Encontramos algumas interações que apresentam riscos, veja a seguir:</span>
 
                     {medicines.map(medicine =>
                         <Medicine
@@ -28,10 +28,18 @@ const Result = ({ hasResults, pregancyRiskMedicines, medicines }) => {
                         />
                     )}
                 </>
-            ) : null}
+            ) : (
+                <div className={styles.ImageWrapper}>
+                    <img
+                        width='500px'
+                        src="./images/no-interaction-found.png"
+                        alt="Nenhuma interação encontrada"
+                    />
+                </div>
+            )}
         </section>
     ) : (
-        <div className={styles.NoResultImageWrapper}>
+        <div className={styles.ImageWrapper}>
             <img src="./images/no-result.png" width='500px' />
         </div>
     )
